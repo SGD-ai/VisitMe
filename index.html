@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Boss</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #00008b, #00bfff, #1e90ff); /* Blue Neon Gradient */
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #fff;
+      font-weight: 700;
+      text-shadow: 0 0 12px #00ffff, 0 0 25px #00d4ff, 0 0 40px #a0f0ff, 2px 2px 8px #000000;
+      margin-bottom: 20px;
+      font-size: 32px;
+      animation: shimmerText 3s infinite;
+    }
+
+    p {
+      color: #fff;
+      font-weight: 600;
+      text-shadow: 0 0 8px #00cfff, 0 0 16px #70e0ff, 1px 1px 6px #000000;
+      font-size: 20px;
+      margin-bottom: 30px;
+      animation: shimmerText 4s infinite;
+    }
+
+    a.button {
+      display: block;
+      padding: 18px 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      background-color: #00bfff;
+      border-radius: 15px;
+      text-decoration: none;
+      margin: 12px 0;
+      width: 80%;
+      max-width: 320px;
+      box-shadow: 0 0 12px #00d4ff, 0 0 28px #70e0ff, 2px 2px 10px #000000;
+      transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    a.button::after {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 300%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.45), transparent);
+      animation: shine 2.2s infinite;
+    }
+
+    a.button:hover {
+      background-color: #0099cc;
+      transform: scale(1.08);
+      box-shadow: 0 0 18px #70e0ff, 0 0 35px #a0f0ff, 2px 2px 12px #000000;
+    }
+
+    @keyframes shine {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes shimmerText {
+      0% { opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome Boss 😎</h1>
+  <p>4 RECOMMENDED SG COMPANIES:</p>
+  <a class="button" href="https://1playsg.vip/RFONEPLAYBRIANNAFB">TRUSTED COMPANY</a>
+  <a class="button" href="https://mbs888.online/RFMBS888BRIELLEFB">BIG REWARD</a>
+  <a class="button" href="https://ge88s.club/RFGE88BIANCAFB">ONG COMPANY</a>
+  <a class="button" href="https://koi8.me/RFKOI8BELLINAFB">BEST CASHBACK</a>
+</body>
+</html>
